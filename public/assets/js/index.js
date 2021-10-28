@@ -13,5 +13,6 @@ window.onload = () => {
 function addEvent(elem) {
     elem.onmousedown = () => {
         elem.classList.add("plock-explode");
+        new Audio('plock.mp3')?.play();
     }
 }
