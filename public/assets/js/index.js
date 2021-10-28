@@ -11,7 +11,7 @@ window.onload = () => {
 }
 
 function addEvent(elem) {
-    elem.onclick = () => {
+    elem.onmousedown = () => {
         elem.classList.add("plock-explode");
     }
 }
