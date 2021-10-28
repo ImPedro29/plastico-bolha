@@ -13,6 +13,7 @@ window.onload = () => {
 function addEvent(elem) {
     elem.onmousedown = () => {
         elem.classList.add("plock-explode");
-        new Audio('plock.mp3')?.play();
+        let url = Math.random() > .95 ? "./assets/audio/plock2.mp3" : './assets/audio/plock.mp3';
+        new Audio(url)?.play();
     }
 }
