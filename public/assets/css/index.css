@@ -16,8 +16,9 @@ body {
 
 .plock{
     background: #111111;
-    width: 75px;
-    height: 50px;
+    color: transparent;
+    width: 100px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,6 +26,14 @@ body {
     flex: 1;
     padding: 0 4px;
     user-select: none;
+    transition: .4s ease opacity;
+    margin: 2px;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.plock:hover {
+    opacity: .8;
 }
 
 .plock-explode {
